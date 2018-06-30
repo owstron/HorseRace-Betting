@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Horse Racing</title>
+		<link rel="stylesheet" href="game.css" />
+		<script src="game.js"></script>
+	</head>
+
+	<body>
+
+		<div id="horse1" class="horse standRight">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="horse2" class="horse standRight">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="horse3" class="horse standRight">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div id="horse4" class="horse standRight">
+			<div class="rider">
+				<div class="head">
+				</div>
+
+				<div class="body">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="track">
+			<div id="startline">
+
+			</div>
+			<div class="inner">
+				<button id="start">
+					Start Race
+                </button>
+
+				<div id="bet">
+					<p>You currently have <span id="funds">100</span></p>
+					<label>Bet Amount  (£)</label>
+					<input type="number" min="0" value="0" id="amount" />
+					<label>Bet on horse:</label>
+					<select id="bethorse">
+						<option value="horse1">White</option>
+						<option value="horse2">Blue</option>
+						<option value="horse3">Green</option>
+						<option value="horse4">Brown</option>
+                    </select>
+                    <label>No. of Laps</label>
+                    <input type="number" min="1" value="1" id="laps" />
+
+				</div>
+
+				<img src="images/tree.png" class="tree" />
+
+                <table id="results">
+                    <thead>
+                    <tr>
+                        <th colspan=3>Results</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>1st</td>
+                        <td id='pos-1-head' class="horse1"></td>
+                        <td id='pos-1-time'></td>
+                    </tr>
+                    <tr>
+                        <td>2nd</td>
+                        <td id='pos-2-head' class="horse2"></td>
+                        <td id='pos-2-time'></td>
+                    </tr>
+                    <tr>
+                        <td>3rd</td>
+                        <td id='pos-3-head' class="horse3"></td>
+                        <td id='pos-3-time'></td>
+                    </tr>
+                    <tr>
+                        <td>4th</td>
+                        <td id='pos-4-head' class="horse4"></td>
+                        <td id='pos-4-time'></td>
+                    </tr>
+                </table>
+
+                <table id="odds">
+                    <thead>
+                        <tr>
+                            <th colspan=3>Odds</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>White</td>
+                        <td id='horse1-head' class="horse1"></td>
+                        <td id='horse1-odds'></td>
+                    </tr>
+                    <tr>
+                        <td>Blue</td>
+                        <td id='horse2-head' class="horse2"></td>
+                        <td id='horse2-odds'></td>
+                    </tr>
+                    <tr>
+                        <td>Green</td>
+                        <td id='horse3-head' class="horse3"></td>
+                        <td id='horse3-odds'></td>
+                    </tr>
+                    <tr>
+                        <td>Brown</td>
+                        <td id='horse4-head' class="horse4"></td>
+                        <td id='horse4-odds'></td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+	</body>
+</html>
